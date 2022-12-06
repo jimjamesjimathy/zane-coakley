@@ -5,11 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        charcoal: "#264653",
-        green: "#2A9D8F",
-        maize: "#E9C46A",
-        brown: "#F4A261",
-        red: "#E76F51",
+        charcoal: "#3B242F",
+        green: "#55B2BB",
+        maize: "#F7C934",
+        brown: "#F5A654",
+        red: "#F11661",
         "opaque-black": "rgba(0,0,0,0.3)",
       },
       backgroundImage: (theme) => ({
