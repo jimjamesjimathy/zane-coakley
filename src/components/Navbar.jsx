@@ -26,7 +26,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage
     ? ""
-    : "z-50 bg-[#13242A] shadow-xl shadow-opaque-black";
+    : "z-50 bg-[#13242A] shadow-md shadow-opaque-black";
 
   return (
     <nav className={`${navbarBackground} relative z-50 w-full md:fixed top-0 py-7`}>
