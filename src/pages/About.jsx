@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <section id="about" className="h-screen pt-20">
-      <div className="h-full w-full flex flex-col">
-        <div className="basis-3/5 flex">
+      <div className="flex flex-col w-full h-full">
+
+        {/* TOP HALF OF ABOUT  */}
+
+        <div className="flex flex-col md:flex-row basis-3/5">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -15,12 +18,12 @@ const About = () => {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="flex-1 flex flex-col items-center justify-center"
+            className="relative flex flex-col items-center justify-center basis-3/5"
           >
-            <h1 className="text-9xl font-amatic border-b-2 w-4/6 text-center">
+            <h1 className="w-4/6 text-center border-b-2 text-7xl md:text-8xl lg:text-9xl font-amatic">
               About Zane
             </h1>
-            <p className="w-5/6 text-center pt-8">
+            <p className="w-5/6 pt-8 text-center">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium nobis eaque exercitationem earum delectus totam
               dolorem. Perspiciatis labore saepe quasi odio dolore. Explicabo
@@ -36,27 +39,19 @@ const About = () => {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="relative flex-1 flex items-center justify-center"
+            className="flex items-center justify-center basis-2/5"
           >
             <img
               src={guitar}
               alt=""
-              className="max-h-[350px] rounded-lg z-10"
+              className="z-10 h-auto max-w-[355px] md:max-w-full rounded-lg "
             />
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 0.7, delay: 0.7 }}
-              variants={{
-                hidden: { opacity: 0, x: 100 },
-                visible: { opacity: 1, x: 0 },
-              }}
-              className="absolute h-[350px] w-[65%] rounded-lg left-28 top-7 border-8 border-white"
-            />
-          </motion.div>
+            </motion.div>
         </div>
-        <div className="basis-3/5 flex items-center justify-evenly gap-8 px-6">
+
+              {/* BOTTOM HALF OF ABOUT  */}
+
+        <div className="flex items-center gap-8 px-6 basis-3/5 justify-evenly">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -66,13 +61,13 @@ const About = () => {
               hidden: { opacity: 0, y: 100 },
               visible: { opacity: 1, y: 0 },
             }}
-            className=" relative flex-1 h-2/3"
+            className="relative flex-1 h-2/3"
           >
-            <h3 className="text-5xl absolute left-0 top-0 z-10 w-5/6">
+            <h3 className="absolute top-0 left-0 z-10 w-5/6 text-5xl">
               SECTION 1
             </h3>
             <div className="absolute w-2/3 h-[55%] top-0 right-0 bg-red " />
-            <p className="text-md absolute bottom-0">
+            <p className="absolute bottom-0 text-md">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
               vero commodi perferendis et possimus neque magnam porro ipsum
               esse, nostrum enim illum, doloremque, fugiat hic ad rerum delectus
@@ -88,13 +83,13 @@ const About = () => {
               hidden: { opacity: 0, y: 100 },
               visible: { opacity: 1, y: 0 },
             }}
-            className=" relative flex-1 h-2/3"
+            className="relative flex-1 h-2/3"
           >
-            <h3 className="text-5xl absolute left-0 top-0 z-10 w-5/6">
+            <h3 className="absolute top-0 left-0 z-10 w-5/6 text-5xl">
               SECTION 2
             </h3>
             <div className="absolute w-2/3 h-[55%] top-0 right-0 bg-green " />
-            <p className="text-md absolute bottom-0">
+            <p className="absolute bottom-0 text-md">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
               vero commodi perferendis et possimus neque magnam porro ipsum
               esse, nostrum enim illum, doloremque, fugiat hic ad rerum delectus
@@ -110,13 +105,13 @@ const About = () => {
               hidden: { opacity: 0, y: 100 },
               visible: { opacity: 1, y: 0 },
             }}
-            className=" relative flex-1 h-2/3"
+            className="relative flex-1 h-2/3"
           >
-            <h3 className="text-5xl absolute left-0 top-0 z-10 w-5/6">
+            <h3 className="absolute top-0 left-0 z-10 w-5/6 text-5xl">
               SECTION 3
             </h3>
             <div className="absolute w-2/3 h-[55%] top-0 right-0 bg-maize " />
-            <p className="text-md absolute bottom-0">
+            <p className="absolute bottom-0 text-md">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
               vero commodi perferendis et possimus neque magnam porro ipsum
               esse, nostrum enim illum, doloremque, fugiat hic ad rerum delectus

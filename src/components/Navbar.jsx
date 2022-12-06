@@ -26,13 +26,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage
     ? ""
-    : "z-50 bg-[#13242A] shadow-md shadow-opaque-black";
+    : "z-50 bg-[#26171E] shadow-md shadow-opaque-black";
 
   return (
-    <nav className={`${navbarBackground} relative z-50 w-full md:fixed top-0 py-7`}>
+    <nav className={`${navbarBackground} relative z-50 w-full md:fixed top-0 py-5`}>
       <div className="flex items-center justify-between w-5/6 mx-auto">
         <div>
-          <h3>ZK</h3>
+          <a className="text-5xl font-bold tracking-widest font-amatic" href="/">ZK</a>
         </div>
         {isDesktop ? (
           <ul className={"flex space-x-8 text-md"}>
