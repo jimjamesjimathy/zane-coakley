@@ -7,7 +7,7 @@ const About = () => {
       <div className="flex flex-col w-full h-full">
         {/* TOP HALF OF ABOUT  */}
 
-        <div className="flex flex-col md:flex-row basis-3/5 sm:w-5/6 mx-auto">
+        <div className="flex flex-col md:flex-row basis-3/5 w-full sm:w-5/6 mx-auto">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -19,12 +19,12 @@ const About = () => {
             }}
             className="relative flex flex-col items-center justify-center md:items-start basis-3/5"
           >
-            <h1 className="w-full text-center md:text-start text-7xl md:text-9xl font-amatic">
+            <h1 className="w-full text-center md:text-start text-7xl md:text-9xl font-amatic pb-4">
               About
               <span className="text-7xl md:text-9xl text-maize"> Zane</span>
             </h1>
             <div className="h-[2px] w-2/3 bg-line-gradient" />
-            <p className="w-5/6 pt-8 text-center md:text-start pb-6">
+            <p className="w-5/6 pt-8 text-center text-sm sm:text-lg md:text-start">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium nobis eaque exercitationem earum delectus totam
               dolorem. Perspiciatis labore saepe quasi odio dolore. Explicabo
@@ -64,11 +64,11 @@ const About = () => {
             }}
             className="relative flex flex-col justify-end w-full md:flex-1 xs:py-24 sm:py-20 md:py-32 md:px-2 py-32 px-2"
           >
-            <h3 className="absolute top-0 md:top-12 left-0 z-10 w-5/6 text-5xl">
+            <h3 className="absolute top-0 md:top-12 left-0 z-10 w-5/6 text-4xl sm:text-5xl">
               SECTION 1
             </h3>
             <div className="absolute w-2/3 h-full md:h-[55%] top-0 right-0 bg-red" />
-            <p className="absolute bottom-0 text-md md:bg-transparent bg-white md:text-white text-black md:font-normal font-bold md:p-0 px-4 py-2 ss:py-2 bg-opacity-50">
+            <p className="absolute bottom-0 text-sm sm:text-md md:bg-transparent bg-white md:text-white text-black md:font-normal font-bold md:p-0 px-4 py-2 ss:py-2 bg-opacity-50">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
               vero commodi perferendis et possimus neque magnam porro ipsum
               esse, nostrum enim illum, doloremque, fugiat hic ad rerum delectus
@@ -86,11 +86,11 @@ const About = () => {
             }}
             className="relative flex flex-col justify-end w-full md:flex-1 xs:py-24 sm:py-24 md:py-32 md:px-2 py-32 px-2"
           >
-            <h3 className="absolute top-0 md:top-12 left-0 z-10 w-5/6 text-5xl">
+            <h3 className="absolute top-0 md:top-12 left-0 z-10 w-5/6 text-4xl sm:text-5xl">
               SECTION 2
             </h3>
             <div className="absolute w-2/3 h-full md:h-[55%] top-0 right-0 bg-green " />
-            <p className="absolute bottom-0 text-md md:bg-transparent bg-white md:text-white text-black md:font-normal font-bold md:p-0 px-4 py-2 ss:py-2 bg-opacity-50">
+            <p className="absolute bottom-0 text-sm sm:text-md md:bg-transparent bg-white md:text-white text-black md:font-normal font-bold md:p-0 px-4 py-2 ss:py-2 bg-opacity-50">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
               vero commodi perferendis et possimus neque magnam porro ipsum
               esse, nostrum enim illum, doloremque, fugiat hic ad rerum delectus
@@ -108,11 +108,11 @@ const About = () => {
             }}
             className="relative flex flex-col justify-end w-full md:flex-1 xs:py-24 sm:py-24 md:py-32 md:px-2 py-32 px-2"
           >
-            <h3 className="absolute top-0 md:top-12 left-0 z-10 w-5/6 text-5xl">
+            <h3 className="absolute top-0 md:top-12 left-0 z-10 w-5/6 text-4xl sm:text-5xl">
               SECTION 3
             </h3>
             <div className="absolute w-2/3 h-full md:h-[55%] top-0 right-0 bg-maize " />
-            <p className="absolute bottom-0 text-md md:bg-transparent bg-white md:text-white text-black md:font-normal font-bold md:p-0 px-4 py-2 ss:py-2 bg-opacity-50">
+            <p className="absolute bottom-0 text-sm sm:text-md md:bg-transparent bg-white md:text-white text-black md:font-normal font-bold md:p-0 px-4 py-2 ss:py-2 bg-opacity-50">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
               vero commodi perferendis et possimus neque magnam porro ipsum
               esse, nostrum enim illum, doloremque, fugiat hic ad rerum delectus
