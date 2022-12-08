@@ -35,7 +35,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="relative w-5/6 md:h-screen mx-auto">
+      <div className="w-5/6 mx-auto md:h-screen">
         {isDesktop && (
           <DotGroup
             selectedPage={selectedPage}
@@ -50,7 +50,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="relative w-5/6 h-screen mx-auto">
+      <div className="relative mx-auto md:h-screen">
         <motion.div
           amount="all"
           onViewportEnter={() => setSelectedPage("about")}
