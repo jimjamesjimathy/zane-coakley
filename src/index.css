@@ -21,3 +21,9 @@ body,
 ::-webkit-scrollbar {
     width: 0;
 }
+
+
+.carousel .carousel.carousel-slider .control-arrow {
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.15);
+  }

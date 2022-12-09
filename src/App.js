@@ -59,7 +59,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="relative w-5/6 h-screen mx-auto">
+      <div className="relative w-5/6 mx-auto">
         <motion.div
           amount="all"
           onViewportEnter={() => setSelectedPage("music")}
@@ -77,7 +77,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="relative w-5/6 h-screen mx-auto">
+      <div className="relative w-5/6 mx-auto">
         <motion.div
           amount="all"
           onViewportEnter={() => setSelectedPage("contact")}
