@@ -4,19 +4,19 @@ const Contact = () => {
   return (
     <section id="contact" className="h-screen pt-20">
       <div className="flex flex-wrap items-center h-full">
-        <div className="w-full text-center">
-          <h2 className="font-amatic text-7xl">
-            Contact me to shred the sicky
+        <div className="w-2/3 mx-auto text-center border-b">
+          <h2 className="font-amatic text-7xl pb-2">
+            Contact me to book a show
           </h2>
         </div>
 
         {/* LEFT SIDE WITH TEXT AND IMAGE  */}
-        <div className="basis-2/5 h-2/3 bg-opaque-black border-r-2 flex flex-col items-center justify-evenly">
+        <div className="basis-2/5 h-5/6 bg-opaque-black border-r-2 flex flex-col items-center justify-center">
           <div className="">
             <h3 className="text-5xl">heading</h3>
           </div>
           <div className="">
-            <img src={contact} alt="" />
+            <img src={contact} alt="" className="py-14" />
           </div>
           <div className="">
             <p className="text-xl text-center">
@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
 
         {/* RIGHT SIDE WITH FORM  */}
-        <div className="flex items-center basis-3/5 h-2/3 bg-opaque-black">
+        <div className="flex items-center basis-3/5 h-5/6 bg-opaque-black">
           <form
             action=""
             className="flex flex-col items-center justify-center w-5/6 mx-auto gap-y-8 h-5/6"

@@ -13,7 +13,7 @@ module.exports = {
         "opaque-black": "rgba(0,0,0,0.3)",
       },
       backgroundImage: (theme) => ({
-        "line-gradient":
+        "lineGradient":
           "linear-gradient(81.66deg, #E9C46A 7.21%, #F4A261 45.05%, #E76F51 78.07%)",
       }),
       fontFamily: {

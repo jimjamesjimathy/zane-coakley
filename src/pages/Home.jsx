@@ -38,7 +38,8 @@ const Home = ({ setSelectedPage }) => {
         <div className="flex flex-col items-center justify-center order-1 mx-auto md:items-start md:pt-0 pt-6 md:basis-3/5">
           <div>
             <h1 className="tracking-wider text-5xl xs:text-7xl md:text-9xl font-amatic pb-2">
-              Zane Coakley
+              Zane
+              <span className="text-maize"> Coakley</span>
             </h1>
           </div>
           <div className="pb-2">
@@ -46,7 +47,7 @@ const Home = ({ setSelectedPage }) => {
               Singer // Songwriter // Performer // Sicky Dude.
             </h3>
           </div>
-          <div className="sm:w-5/6 pb-2">
+          <div className="sm:w-5/6 pb-4">
             <p className="hidden fs:block text-center md:text-start fs:text-xs ss:text-sm md:text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsa
               illum dolores placeat. Aspernatur maiores dolores quaerat libero
@@ -55,7 +56,16 @@ const Home = ({ setSelectedPage }) => {
             </p>
           </div>
           <div className="">
-            <button className="px-4 py-2 font-bold text-black bg-brown">Contact me</button>
+            <motion.button
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: .2 },
+              }}
+              whileTap={{ scale: 1 }}
+              className="py-2 px-4 border border-maize rounded-sm"
+            >
+              Book me
+            </motion.button>
           </div>
         </div>
 
