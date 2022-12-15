@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Music from "./pages/Music";
 import Media from "./pages/Media";
+import Shows from "./pages/Shows";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import DotGroup from "./components/DotGroup";
@@ -39,14 +40,14 @@ function App() {
         {isDesktop && (
           <DotGroup
             selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
+            
           />
         )}
         <motion.div
           amount="all"
           onViewportEnter={() => setSelectedPage("home")}
         >
-          <Home setSelectedPage={setSelectedPage} />
+          <Home  setSelectedPage={setSelectedPage}/>
         </motion.div>
       </div>
       <LineGradient />
@@ -55,7 +56,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("about")}
         >
-          <About setSelectedPage={setSelectedPage} />
+          <About  />
         </motion.div>
       </div>
       <LineGradient />
@@ -64,7 +65,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("music")}
         >
-          <Music setSelectedPage={setSelectedPage} />
+          <Music  />
         </motion.div>
       </div>
       <LineGradient />
@@ -73,7 +74,16 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("media")}
         >
-          <Media setSelectedPage={setSelectedPage} />
+          <Media  />
+        </motion.div>
+      </div>
+      <LineGradient />
+      <div className="relative mx-auto md:h-screen">
+        <motion.div
+          amount="all"
+          onViewportEnter={() => setSelectedPage("shows")}
+        >
+          <Shows  />
         </motion.div>
       </div>
       <LineGradient />
@@ -82,7 +92,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("contact")}
         >
-          <Contact setSelectedPage={setSelectedPage} />
+          <Contact  />
         </motion.div>
       </div>
       <LineGradient />

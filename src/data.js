@@ -30,6 +30,10 @@ export const navigation = [
   },
   {
     id: 5,
+    name: "shows",
+  },
+  {
+    id: 6,
     name: "contact",
   },
 ];
