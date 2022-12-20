@@ -1,6 +1,5 @@
 import { Carousel } from "react-responsive-carousel";
 import { photos } from "../data";
-import { motion } from "framer-motion";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../index.css";
 
@@ -20,23 +19,26 @@ const Media = () => {
           autoPlay={true}
           interval={5000}
           showThumbs={false}
-          showIndicators={false}
+          showIndicators={true}
           showStatus={false}
           infiniteLoop={true}
           autoFocus={true}
           transitionTime={2000}
-          className="flex flex-col py-8 rounded-t-md flex-3 border-4 border-red"
+          dynamicHeight={false}
+          className="rounded-t-md flex-3 border-4 border-red p-4 h-5/6"
         >
           {photos.map((photo) => (
             <div
               key={photo.id}
-              className="flex items-center justify-center w-full"
+              className="flex items-center justify-center h-full"
             >
-              <img
-                src={photo.img}
-                alt=""
-                className="w-full max-w-[405px] h-auto"
-              />
+              <div className="h-full flex items-center justify-center">
+                <img
+                  src={photo.img}
+                  alt=""
+                  className="w-full h-auto max-w-[80%] rounded-sm"
+                />
+              </div>
             </div>
           ))}
         </Carousel>

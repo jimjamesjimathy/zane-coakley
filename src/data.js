@@ -11,6 +11,23 @@ import z10 from "./assets/media/z10.jpg";
 import z11 from "./assets/media/z11.jpg";
 import z12 from "./assets/media/z12.jpg";
 
+import z13 from "./assets/media/z13.jpg";
+import z14 from "./assets/media/z14.jpg";
+import z15 from "./assets/media/z15.jpg";
+import z16 from "./assets/media/z16.jpg";
+import z17 from "./assets/media/z17.jpg";
+import z18 from "./assets/media/z18.jpg";
+import z19 from "./assets/media/z19.jpg";
+import z20 from "./assets/media/z20.jpg";
+import z21 from "./assets/media/z21.jpg";
+import z22 from "./assets/media/z22.jpg";
+import z23 from "./assets/media/z23.jpg";
+import z24 from "./assets/media/z24.jpg";
+import z25 from "./assets/media/z25.jpg";
+import z26 from "./assets/media/z26.jpg";
+import z27 from "./assets/media/z27.jpg";
+import z28 from "./assets/media/z12.jpg";
+
 export const navigation = [
   {
     id: 1,
@@ -86,5 +103,69 @@ export const photos = [
   {
     id: 12,
     img: z12,
+  },
+  {
+    id: 13,
+    img: z13,
+  },
+  {
+    id: 14,
+    img: z14,
+  },
+  {
+    id: 15,
+    img: z15,
+  },
+  {
+    id: 16,
+    img: z16,
+  },
+  {
+    id: 17,
+    img: z17,
+  },
+  {
+    id: 18,
+    img: z18,
+  },
+  {
+    id: 19,
+    img: z19,
+  },
+  {
+    id: 20,
+    img: z20,
+  },
+  {
+    id: 21,
+    img: z21,
+  },
+  {
+    id: 22,
+    img: z22,
+  },
+  {
+    id: 23,
+    img: z23,
+  },
+  {
+    id: 24,
+    img: z24,
+  },
+  {
+    id: 25,
+    img: z25,
+  },
+  {
+    id: 26,
+    img: z26,
+  },
+  {
+    id: 27,
+    img: z27,
+  },
+  {
+    id: 28,
+    img: z28,
   },
 ];
